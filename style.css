@@ -1,0 +1,745 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url("img/bg.svg");
+    background-color: #000;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-left h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    color: #ff4444;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #fff;
+    color: #1a1a1a;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ff4444;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.logo-subtitle {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    line-height: 1.4;
+}
+
+.social-icons {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons span {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-icons span:hover {
+    background: #ff4444;
+    color: #fff;
+}
+
+/* Statistics Section */
+.stats-section {
+    background-color: #000;
+    color: #ffffff;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+.stat-item {
+    padding: 40px 20px;
+}
+
+.stat-number {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.sum{
+    color: #D40000;
+}
+
+/* Courses Section */
+.courses-section {
+    background: #fff;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.courses-section .container {
+    flex-direction: column;
+}
+
+.courses-section h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%;
+}
+
+.course-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+}
+
+.course-image {
+    height: 300px;
+    background: linear-gradient(135deg, #333 0%, #555 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.course-image h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.course-button {
+    width: 100%;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.course-button:hover {
+    background: #fff;
+    color: #1a1a1a;
+}
+
+/* Structure Section */
+.structure-section {
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.structure-content {
+    text-align: center;
+    width: 100%;
+}
+
+.structure-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.structure-content p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.structure-button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.structure-button:hover {
+    background: #fff;
+    color: #1a1a1a;
+}
+
+/* Professor Section */
+.professor-section {
+    background: #000000;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.professor-slider {
+    width: 100%;
+    position: relative;
+}
+
+.professor-slides {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.professor-slide {
+    display: none;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.professor-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.professor-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+}
+
+.professor-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.professor-placeholder {
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(135deg, #333 0%, #555 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.professor-card {
+    background: #fff;
+    color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.professor-card h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.professor-title {
+    color: #ff4444;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.professor-description {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.professor-button {
+    background: #ff4444;
+    border: none;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.professor-button:hover {
+    background: #cc3333;
+}
+
+/* Slider Controls */
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.slider-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fff;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-btn:hover {
+    background: #fff;
+    color: #1a1a1a;
+}
+
+.slider-dots {
+    display: flex;
+    gap: 15px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #ff4444;
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* Tips Section */
+.tips-section {
+    background: #f8f8f8;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.tips-section .container {
+    flex-direction: column;
+}
+
+.tips-section h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tips-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+    color: #666;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%;
+}
+
+.tip-card {
+    background: #666;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-10px);
+}
+
+.tip-image {
+    height: 250px;
+    background: linear-gradient(135deg, #555 0%, #777 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.tip-image h3 {
+    font-size: 1.5rem;
+}
+
+.tip-button {
+    width: 100%;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tip-button:hover {
+    background: #fff;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.etec-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff4444;
+}
+
+.footer-badges {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-badges span {
+    background: #ff4444;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.footer-contact p {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.footer-button {
+    background: #ff4444;
+    border: none;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.footer-button:hover {
+    background: #cc3333;
+}
+
+.footer-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.footer-column li:hover {
+    opacity: 1;
+    color: #ff4444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .hero-left h1 {
+        font-size: 2rem;
+    }
+    
+    .logo {
+        font-size: 3rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .courses-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .professor-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .professor-placeholder {
+        width: 250px;
+        height: 300px;
+    }
+    
+    .slider-controls {
+        gap: 20px;
+        margin-top: 30px;
+    }
+    
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .tips-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-right {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .structure-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .courses-section h2,
+    .tips-section h2 {
+        font-size: 2rem;
+    }
+    .logo img{
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-left h1 {
+        font-size: 1.5rem;
+    }
+    
+    .logo {
+        font-size: 2.5rem;
+    }
+    
+    .stat-number {
+        font-size: 3rem;
+    }
+    
+    .structure-content h2 {
+        font-size: 2rem;
+    }
+    
+    .courses-section h2,
+    .tips-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .professor-placeholder {
+        width: 200px;
+        height: 250px;
+    }
+    
+    .professor-card {
+        padding: 30px;
+    }
+    
+    .professor-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .slider-controls {
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .slider-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .dot {
+        width: 12px;
+        height: 12px;
+    }
+
+    .logo img{
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
