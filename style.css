@@ -20,7 +20,7 @@ body {
     justify-content: center;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -109,6 +109,7 @@ a{
     right: 30px;
     display: flex;
     gap: 15px;
+    cursor: pointer;
 }
 
 .social-icons span {
@@ -164,7 +165,7 @@ a{
     font-weight: 500;
 }
 
-.sum{
+.sum {
     color: #D40000;
 }
 
@@ -284,7 +285,8 @@ a{
 
 /* Professor Section */
 .professor-section {
-    background: #000000;
+    background-color: #000000;
+    background-image: url("img/bg.svg");
     min-height: 100vh;
     height: 100vh;
     display: flex;
@@ -324,6 +326,7 @@ a{
 }
 
 .professor-image {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -339,14 +342,15 @@ a{
     justify-content: center;
     color: #fff;
     font-size: 1.2rem;
+
 }
 
 .professor-card {
     background: #fff;
     color: #333;
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .professor-card h3 {
@@ -380,6 +384,12 @@ a{
 
 .professor-button:hover {
     background: #cc3333;
+}
+
+.imgprof {
+    width: 350px;
+    height: 450px;
+    filter: drop-shadow(0 0 0.2rem rgba(165, 165, 165, 0.8));
 }
 
 /* Slider Controls */
@@ -612,134 +622,145 @@ a{
         text-align: center;
         gap: 40px;
     }
-    
+
     .hero-left h1 {
         font-size: 2rem;
     }
-    
+
     .logo {
         font-size: 3rem;
     }
-    
+
     .stats-grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .courses-grid {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .professor-content {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 30px;
     }
-    
+
     .professor-placeholder {
         width: 250px;
         height: 300px;
     }
-    
+
     .slider-controls {
         gap: 20px;
         margin-top: 30px;
     }
-    
+
     .slider-btn {
         width: 40px;
         height: 40px;
         font-size: 1.2rem;
     }
-    
+
     .tips-grid {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 60px;
     }
-    
+
     .footer-right {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .structure-content h2 {
         font-size: 2.5rem;
     }
-    
+
     .courses-section h2,
     .tips-section h2 {
         font-size: 2rem;
     }
-    .logo img{
+
+    .logo img {
         width: 10rem;
         height: 10rem;
     }
+
+    .footer-logo img {
+        width: 15rem;
+        height: 15rem;
+    }
+
 }
 
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
     }
-    
+
     .hero-left h1 {
         font-size: 1.5rem;
     }
-    
+
     .logo {
         font-size: 2.5rem;
     }
-    
+
     .stat-number {
         font-size: 3rem;
     }
-    
+
     .structure-content h2 {
         font-size: 2rem;
     }
-    
+
     .courses-section h2,
     .tips-section h2 {
         font-size: 1.8rem;
     }
-    
+
     .professor-placeholder {
         width: 200px;
         height: 250px;
     }
-    
+
     .professor-card {
         padding: 30px;
     }
-    
+
     .professor-card h3 {
         font-size: 1.5rem;
     }
-    
+
     .slider-controls {
         gap: 15px;
         margin-top: 20px;
     }
-    
+
     .slider-btn {
         width: 35px;
         height: 35px;
         font-size: 1rem;
     }
-    
+
     .dot {
         width: 12px;
         height: 12px;
     }
 
-    .logo img{
+    .logo img {
         width: 10rem;
         height: 10rem;
     }
-}
 
+    .footer-logo img {
+        width: 15rem;
+        height: 15rem;
+    }
+}
